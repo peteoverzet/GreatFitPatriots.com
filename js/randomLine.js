@@ -12,5 +12,5 @@ function getResponse() {
 
 function showResponse() {
   var response = getResponse();
-  $("#response").html(response);
+  $("#response").text(response);
 };
