@@ -1,16 +1,16 @@
-(function () {
-  $(document).ready(function () {
-  });
-}());
-
-function getResponse() {
-  $.get('responses.txt', function(data) {
-    var rows = data.split('\n');
-    return rows[Math.floor(Math.random()*rows.length)];
-  }, 'text');
-};
-
 function showResponse() {
-  var response = getResponse();
-  $("#response").text(response);
+  var playerName = $("#playerName").val();
+  var bothFirstAndLastNames = playerName.split(" ");
+
+  if (playerName == undefined || playerName.length < 5 || bothFirstAndLastNames.length < 2) {
+    alert("Please enter a player's name to check team fit.");
+  } else {
+    $.get('responses.txt', function(data) {
+      var rows = data.split("\n").filter(function (el) {
+        return el != "";
+      });
+      var row = rows[Math.floor(Math.random()*rows.length)];
+      $("#response").text(row);
+    }, 'text');
+  }
 };
