@@ -1,3 +1,7 @@
+$(function() {
+    $("form").submit(function() { return false; });
+});
+
 function showResponse() {
   var playerName = $("#playerName").val();
   var bothFirstAndLastNames = playerName.split(" ");
