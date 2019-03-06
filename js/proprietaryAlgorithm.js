@@ -2,7 +2,7 @@ $(function() {
     $("form").submit(function() { return false; });
 });
 
-function showResponse() {
+function calculateResponseUsingAI() {
   var playerName = $("#playerName").val();
   var bothFirstAndLastNames = playerName.split(" ");
 
