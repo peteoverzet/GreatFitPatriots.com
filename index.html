@@ -2,6 +2,7 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135014557-1"></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -9,73 +10,128 @@
 
       gtag('config', 'UA-135014557-1');
     </script>
+
     <title>GreatFitPatriots.com</title>
     <meta name="description" content="Your one stop shop for definitively determining whether a free agent, incoming rookie, or disgruntled NFL star would be a great fit on the greatest sports organization of all time, the New England Patriots.">
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script src='js/proprietaryAlgorithm.js'></script>
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAQ6EAAAAAANrg6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREREREREREREREREREREREREREREREREQAAAAAREREQAAAAAAEREQAAAAAAABEQACAgICAAARAAIiIiIgABEQAgICAgABEREAAAAAABERERAAAAABERERERERERERERERERERERERERERERERERERERERERERH//wAA//8AAP//AAD//wAA8A8AAOAHAADAAwAAgAEAAIABAADAAwAA4AcAAPAPAAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+
+    <style>
+      h3 {
+        color: white;
+        text-shadow: 1px 1px 2px #C60C30, 0 0 25px #C60C30, 0 0 5px #C60C30;
+        background-color: #B0B7BC;
+        font-size: 16pt;
+        font-weight: bold;
+      }
+
+      h1 {
+        color: white;
+        text-shadow: 1px 1px 2px #002244, 0 0 25px #002244, 0 0 5px #002244;
+        background-color: #C60C30;
+      }
+
+      h2 {
+        color: red;
+        text-shadow: 1px 1px 2px #C60C30, 0 0 25px #C60C30, 0 0 5px #C60C30;
+        background-color: #B0B7BC;
+      }
+
+      .plain-link {
+        text-decoration: none;
+      }
+
+      .title {
+        color: #002244;
+        font-size: 32pt;
+        font-weight: bold;
+      }
+
+      .big-header-image {
+        height: 160;
+      }
+
+      .small-header-image {
+        height: 60;
+      }
+
+      .submit-button {
+        padding-left: 15px;
+      }
+
+      .player-field {
+        font-size: 18pt;
+      }
+
+      .form-field-container {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      body {
+        background:url('https://www.bobstores.com/on/demandware.static/-/Sites-vestis-master-catalog/default/dwfb7e9357/product/images/2035/250/2035250/2035250_402_main.jpg');
+        text-align: center;
+      }
+    </style>
   </head>
-<body style="background:url('https://www.bobstores.com/on/demandware.static/-/Sites-vestis-master-catalog/default/dwfb7e9357/product/images/2035/250/2035250/2035250_402_main.jpg');"> 
-    <br>
-    <center>
-      <div>
-        <img src="pats2.gif" height="160">
-        <img src="gopats.gif" height="60">
-        <span style="color:#002244; font-size:32pt;"><b>GreatFitPatriots.com</b></span>
-        <img src="gopats.gif" height="60">
-        <img src="pats2.gif" height="160">
-      </div>
 
-      <div>
-        <br />
-        <span style="font-size:14pt;">
-          <html>
-<head>
-<style>
-h3 {
-  color: white;
-   text-shadow: 1px 1px 2px #C60C30, 0 0 25px #C60C30, 0 0 5px #C60C30;
-  background-color: #B0B7BC;
-}
-  h1 {
-  color: white;
-   text-shadow: 1px 1px 2px #002244, 0 0 25px #002244, 0 0 5px #002244;
-  background-color: #C60C30;
-}
-    h2 {
-  color: red;
-   text-shadow: 1px 1px 2px #C60C30, 0 0 25px #C60C30, 0 0 5px #C60C30;
-  background-color: #B0B7BC;
-}
-</style>
-</head>
-<body>
-          
-          <em>
-            <h3>GREAT FIT PATRIOTS DOT COM IS YOUR ONE STOP SHOP FOR DEFINITIVELY DETERMINING WHETHER A FREE AGENT, INCOMING ROOKIE, OR DISGRUNTLED NFL STAR WOULD BE A GREAT FIT ON THE GREATEST SPORTS ORGANIZATION OF ALL TIME, THE NEW ENGLAND PATRIOTS.<br><br>TO GET STARTED, SIMPLY TYPE IN THE NAME OF A PLAYER YOU'D LIKE TO SEE ON THE PATS & WE'LL LET YOU KNOW IF THEY'D BE A GOOD FIT...<h3>
-          </em>
-              </body>
-              </html>
-      </div>
-        </span>
-        <br />
-      <div>
-        <form onsubmit="calculateResponseUsingAI()">
-          <input id= "playerName" type="text" />
-      <input type="button" onclick="calculateResponseUsingAI()" value="<<<check team fit" style="height:50px; font-size:20pt">
-        </form>
-      </div>
+  <body>
+    <br />
+    <div>
+      <img src="pats2.gif" class="big-header-image">
+      <img src="gopats.gif" class="small-header-image">
+      <span class="title">GreatFitPatriots.com</span>
+      <img src="gopats.gif" class="small-header-image">
+      <img src="pats2.gif" class="big-header-image">
+    </div>
 
-      <div>
-        <h1><p id="response"></p></h1>
-      </div>
+    <div>
+      <br />
+      <em>
+        <h3>
+          GREAT FIT PATRIOTS DOT COM IS YOUR ONE STOP SHOP FOR DEFINITIVELY DETERMINING WHETHER
+          A FREE AGENT, INCOMING ROOKIE, OR DISGRUNTLED NFL STAR WOULD BE A GREAT FIT ON THE
+          GREATEST SPORTS ORGANIZATION OF ALL TIME, THE NEW ENGLAND PATRIOTS.
+          <br />
+          <br />
+          TO GET STARTED, SIMPLY TYPE IN THE NAME OF A PLAYER YOU'D LIKE TO SEE ON THE PATS &
+          WE'LL LET YOU KNOW IF THEY'D BE A GOOD FIT...
+        <h3>
+      </em>
+    </div>
 
-      <div>
-        <br />
-        <br />
-        <br />
-        <h2><a href="https://twitter.com/peteroverzet" style="text-decoration:none;">PRESS INQUIRIES</a>//<a href="https://rotowear.com/products/great-fit-patriots-dot-com-t-shirt" style="text-decoration:none;">MERCHANDISE</a></h2>
-      </div>
-    </center>
+    <br />
+
+    <div class="form-container">
+      <form onsubmit="calculateResponseUsingAI()">
+        <div class="form-field-container">
+          <input class="player-field" id= "playerName" type="text" />
+        </div>
+
+        <div class="form-field-container">
+          <input class="submit-button" type="image" src="button_check-team-fit.png" onclick="calculateResponseUsingAI()" alt="<<<check team fit" />
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <h1><p id="response"></p></h1>
+    </div>
+
+    <div>
+      <br />
+      <br />
+      <br />
+      <h2>
+        <a class="plain-link" href="https://twitter.com/peteroverzet">
+          PRESS INQUIRIES
+        </a>
+        //
+        <a class="plain-link" href="https://rotowear.com/products/great-fit-patriots-dot-com-t-shirt">
+          MERCHANDISE
+        </a>
+      </h2>
+    </div>
   </body>
 </html>
